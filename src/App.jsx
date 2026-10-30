@@ -133,17 +133,15 @@ function App() {
                 </p>
               </div>
               <div
-                id="cartao_pomodoro4"
+                id="cartao_spaced_repetition"
                 className="flex flex-col bg-white border-[#D1DDD6] border rounded-2xl p-6 text-left gap-3 shadow-sm card-animado"
               >
                 <div className="flex bg-[#7AFFC3] size-17 rounded-4xl items-center justify-center">
-                  <img src="pomodoro_icon.png" className="h-10" />
+                  <img src="spaced_repetition_icon.png" className="h-10" />
                 </div>
-                <h1 className="text-2xl font-semibold">Técnica Pomodoro</h1>
+                <h1 className="text-2xl font-semibold">Spaced Repetition (Repetição Espaçada)</h1>
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  Divide o teu tempo em blocos de foco de 25 minutos, com
-                  pequenas pausas. Ajuda a manter a concentração e a evitar a
-                  procrastinação.
+                  Técnica de aprendizagem que consiste em revisar conteúdos em intervalos progressivamente maiores, reforçando a memorização e reduzindo o esquecimento. Permite que o estudante organize suas revisões e retome os assuntos nos momentos mais adequados para fixar o conhecimento.
                 </p>
               </div>
             </div>
