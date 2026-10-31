@@ -14,7 +14,7 @@ function App() {
           >
             <img src="logo.svg" className="h-8 justify-items-start" />
             <div className="flex flex-col justify-center">
-              <h1 className="text-3xl bg-gradient-to-r from-[#7AFFC3] to-[#20B981] bg-clip-text text-transparent font-bold font-">
+              <h1 className="text-3xl bg-gradient-to-r from-[#7AFFC3] to-[#20B981] bg-clip-text text-transparent font-bold tracking-tighter">
                 Foco Já
               </h1>
               <p className="text-gray-500">
@@ -26,7 +26,7 @@ function App() {
             <button
               className="h-10 px-6 py-7 bg-[#7AFFC3] rounded-4xl hover:bg-[#55EBA5] flex flex-row justify-center gap-3 items-center transition-all duration-300 ease-out hover:bg-[#55EBA5] hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 active:scale-95"
             >
-              <img src="login_icon(2).svg" className="h-5" />
+              <img src="login_icon.svg" className="h-5" />
               <p className="font-bold text-[#202923]">Login</p>
             </button>
           </div>
@@ -66,14 +66,14 @@ function App() {
               <p className="font-bold text-[#202923]">
                 Comece a focar agora mesmo
               </p>
-              <img src="arrow_icon 1.png" className="h-4" />
+              <img src="arrow_icon 1.svg" className="h-4" />
             </button>
             </div>
           </div>
           <br />
           <br />
           <div className="text-center">
-            <h1 className="p-6 text-black font-bold text-4xl">
+            <h1 className="p-6 text-black font-bold text-4xl tracking-tighter">
               Técnicas comprovadas <br /> de um estudo{" "}
               <span className="bg-gradient-to-r from-[#7AFFC3] to-[#20B981] bg-clip-text text-transparent">
                 mais eficiente
@@ -95,7 +95,7 @@ function App() {
                 className="flex flex-col bg-white border-[#D1DDD6] border rounded-2xl p-6 text-left gap-3 shadow-sm card-animado"
               >
                 <div className="flex bg-[#7AFFC3] size-17 rounded-4xl items-center justify-center">
-                  <img src="pomodoro_icon.png" className="h-10" />
+                  <img src="pomo.svg" className="h-10" />
                 </div>
                 <h1 className="text-2xl font-semibold">Técnica Pomodoro</h1>
                 <p className="text-sm text-gray-600 leading-relaxed">
@@ -109,7 +109,7 @@ function App() {
                 className="flex flex-col bg-white border-[#D1DDD6] border rounded-2xl p-6 text-left gap-3 shadow-sm card-animado"
               >
                 <div className="flex bg-[#7AFFC3] size-17 rounded-4xl items-center justify-center">
-                  <img src="flashcard_icon.png" className="h-10" />
+                  <img src="flash.svg" className="h-10" />
                 </div>
                 <h1 className="text-2xl font-semibold">Flashcards</h1>
                 <p className="text-sm text-gray-600 leading-relaxed">
@@ -125,7 +125,7 @@ function App() {
                 className="flex flex-col bg-white border-[#D1DDD6] border rounded-2xl p-6 text-left gap-3 shadow-sm card-animado"
               >
                 <div className="flex bg-[#7AFFC3] size-17 rounded-4xl items-center justify-center">
-                  <img src="active_recall_icon.png" className="h-13" />
+                  <img src="active_recall_icon.svg" className="h-13" />
                 </div>
                 <h1 className="text-2xl font-semibold">Active Recall (Recordação Ativa)</h1>
                 <p className="text-sm text-gray-600 leading-relaxed">
@@ -137,7 +137,7 @@ function App() {
                 className="flex flex-col bg-white border-[#D1DDD6] border rounded-2xl p-6 text-left gap-3 shadow-sm card-animado"
               >
                 <div className="flex bg-[#7AFFC3] size-17 rounded-4xl items-center justify-center">
-                  <img src="spaced_repetition_icon.png" className="h-10" />
+                  <img src="spaced_repetition_icon.svg" className="h-10" />
                 </div>
                 <h1 className="text-2xl font-semibold">Spaced Repetition (Repetição Espaçada)</h1>
                 <p className="text-sm text-gray-600 leading-relaxed">
@@ -151,7 +151,7 @@ function App() {
       <footer>
         <div className="flex justify-center items-center px-6 py-6">
           <a href="https://github.com/victorflx7" target="blank">
-            <img src="github_icon.png" className="h-10"/>
+            <img src="git.svg" className="h-10"/>
           </a>
         </div>
       </footer>
