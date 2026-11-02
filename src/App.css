@@ -69,15 +69,15 @@ body,
   opacity: 0;
   animation: aparecer-card 0.7s ease-out forwards;
 }
-#cartao_pomodoro2 {
+#cartao_flashcard {
   animation-delay: 0.15s;
 }
 
-#cartao_pomodoro3 {
+#cartao_active_recall {
   animation-delay: 0.3s;
 }
 
-#cartao_pomodoro4 {
+#cartao_spaced_repetition {
   animation-delay: 0.45s;
 }
 
