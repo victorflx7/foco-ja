@@ -129,11 +129,12 @@ function Login() {
                             <span className="text-red-600">*</span>
                           </h1>
                           <div className="flex items-center border-2 border-gray-300 rounded-lg px-5 py-2 hover:border-[#aeffdb] focus:-[#7AFFC3] hover:bg-[#F0FBFD] gap-4">
-                            <img src="user_icon.svg" className="h-5" />
+                            <img src="user_icon.svg" className="h-5"/>
                             <input
                               type="text"
+                              required
                               placeholder="João da Silva"
-                              className="w-80 placeholder:text-sm outline-none"
+                              className="w-80 placeholder:text-sm outline-none" value={nome} onChange={(e) => setNome(e.target.value)}
                             />
                           </div>
                         </div>
@@ -145,9 +146,9 @@ function Login() {
                     <div className="flex items-center border-2 border-gray-300 rounded-lg px-5 py-2 hover:border-[#aeffdb] focus:-[#7AFFC3] hover:bg-[#F0FBFD] ">
                       <img src="email.svg" className="h-5" />
                       <input
-                        type="text"
+                        type="email"
                         placeholder="seuemail@gmail.com"
-                        className="px-4 placeholder:text-sm outline-none w-80"
+                        className="px-4 placeholder:text-sm outline-none w-80" value={email} onChange={(e) => setEmail(e.target.value)}
                       />
                     </div>
                     <h1 className="text-sm translate-y-1">
@@ -157,9 +158,9 @@ function Login() {
                       <div className="flex items-center border-2 border-gray-300 rounded-lg px-5 py-2 hover:border-[#7AFFC3] focus:-[#7AFFC3] hover:bg-[#F0FBFD]">
                         <img src="password-icon.svg" className="h-5" />
                         <input
-                          type="text"
+                          type="password"
                           placeholder="senha123"
-                          className="px-4 placeholder:text-sm outline-none w-80"
+                          className="px-4 placeholder:text-sm outline-none w-80" value={senha} onChange={(e) => setSenha(e.target.value)}
                         />
                       </div>
                       {modoCadastro && (
@@ -169,12 +170,12 @@ function Login() {
                               Confirme sua senha{" "}
                               <span className="text-red-600">*</span>
                             </h1>
-                            <div className="flex items-center border-2 border-gray-300 rounded-lg px-5 py-2 hover:border-[#aeffdb] focus:-[#7AFFC3] hover:bg-[#F0FBFD]">
+                            <div className="flex items-center border-2 border-gray-300 rounded-lg px-5 py-2 hover:border-[#aeffdb] focus:-[#7AFFC3] hover:bg-[#F0FBFD] animate-fade">
                               <img src="password-icon.svg" className="h-5" />
                               <input
-                                type="text"
+                                type="password"
                                 placeholder="senha123"
-                                className="px-4 placeholder:text-sm outline-none w-80"
+                                className="px-4 placeholder:text-sm outline-none w-80" value={confirmarSenha} onChange={(e) => setConfirmarSenha(e.target.value)}
                               />
                             </div>
                         </>
