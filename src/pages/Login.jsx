@@ -20,6 +20,8 @@ function Login() {
   const [erro, setErro] = useState("");
   const [carregando, setCarregando] = useState(false);
   const [contador, setContador] = useState(0);
+  const [exibirSenha, setExibirSenha] = useState(false);
+  const [exibirConfirmarSenha, setExibirConfirmarSenha] = useState(false);
   const traduzirErro = (codigo) => {
     switch(codigo) {
       case "auth/email-already-in-use":
@@ -63,6 +65,10 @@ function Login() {
       setCarregando(false);
     }
   };
+
+  const mudarVisibilidadeSenha = () => setExibirSenha(prevState => !prevState);
+
+  const mudarVisibilidadeConfirmarSenha = () => setExibirConfirmarSenha(prevState => !prevState)
 
   return (
     <>
@@ -158,10 +164,11 @@ function Login() {
                       <div className="flex items-center border-2 border-gray-300 rounded-lg px-5 py-2 hover:border-[#7AFFC3] focus:-[#7AFFC3] hover:bg-[#F0FBFD]">
                         <img src="password-icon.svg" className="h-5" />
                         <input
-                          type="password"
+                          type={exibirSenha ? "text" : "password"}
                           placeholder="senha123"
                           className="px-4 placeholder:text-sm outline-none w-80" value={senha} onChange={(e) => setSenha(e.target.value)}
                         />
+                        <img src={exibirSenha ? "password_show_icon.svg" : "password_not_show_icon.svg"} className="h-5 cursor-pointer" onClick={mudarVisibilidadeSenha}/>
                       </div>
                       {modoCadastro && (
                         <>
@@ -171,12 +178,13 @@ function Login() {
                               <span className="text-red-600">*</span>
                             </h1>
                             <div className="flex items-center border-2 border-gray-300 rounded-lg px-5 py-2 hover:border-[#aeffdb] focus:-[#7AFFC3] hover:bg-[#F0FBFD] animate-fade">
-                              <img src="password-icon.svg" className="h-5" />
+                              <img src="password-icon.svg" className="h-5"/>
                               <input
-                                type="password"
+                                type={exibirConfirmarSenha ? "text" : "password"}
                                 placeholder="senha123"
                                 className="px-4 placeholder:text-sm outline-none w-80" value={confirmarSenha} onChange={(e) => setConfirmarSenha(e.target.value)}
                               />
+                              <img src={exibirConfirmarSenha ? "password_show_icon.svg" : "password_not_show_icon.svg"} className="h-5 cursor-pointer" onClick={mudarVisibilidadeConfirmarSenha}/>
                             </div>
                         </>
                       )}
