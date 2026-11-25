@@ -66,8 +66,8 @@ const navigate = useNavigate();
           >
             <br />
             <div className="texto-animado">
-            <button className="flex flex-row justify-between items-center gap-3 cursor-pointer">
-              <p className="font-bold text-[#202923] cursor-pointer">
+            <button className="flex flex-row justify-between items-center gap-3 cursor-pointer" onClick={() => navigate("/login")}>
+              <p className="font-bold text-[#202923] cursor-pointer" >
                 Comece a focar agora mesmo
               </p>
               <img src="arrow_icon 1.svg" className="h-4" />
