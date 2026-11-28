@@ -8,6 +8,8 @@ import {
   updateProfile,
 } from "firebase/auth";
 import { auth } from "../../firebase";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 
 function Login() {
@@ -73,33 +75,7 @@ function Login() {
   return (
     <>
       <div className="min-h-screen flex flex-col">
-        <header>
-          <div className="flex items-center px-10 py-5 justify-between">
-            <div
-              id="bloco-esquerda"
-              className="flex gap-6 justify-center items-center"
-            >
-              <img
-                src="logo.svg"
-                className="h-8 justify-items-start cursor-pointer"
-                onClick={() => navigate("/")}
-              />
-              <div className="flex flex-col justify-center">
-                <h1 className="text-3xl bg-gradient-to-r from-[#7AFFC3] to-[#20B981] bg-clip-text text-transparent font-bold tracking-tighter">
-                  Foco Já
-                </h1>
-                <p className="text-gray-500">
-                  “Pequenos passos, grandes conquistas.”
-                </p>
-              </div>
-            </div>
-            <div id="bloco-direita" className="flex flex-row">
-              <a href="https://github.com/victorflx7" target="blank">
-                <img src="git.svg" className="h-10 shadow-2xl" />
-              </a>
-            </div>
-          </div>
-        </header>
+        <Header></Header>
         <main className="relative overflow-hidden">
           <div className="min-h-[calc(100vh-100px)] flex justify-center items-center px-6 py-8">
             <div className="relative">
